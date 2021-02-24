@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
+import Image from "../Image/Image";
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
@@ -25,12 +26,20 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <Title title="About Me" />
+        <Title title="Why our builds are the best in Perth" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
+                <Image
+                    src="logo.svg"
+                    className="mx-auto shadow-xl"
+                    alt="Sunset Image"
+                    style={{
+                      border: 'none',
+                      height: '300px',
+                    }}
+                />
               </div>
             </Fade>
           </Col>

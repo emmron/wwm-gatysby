@@ -1,13 +1,8 @@
 #about {
-  background-color: $primary-color;
-  background-image: linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 100%
-  );
-  color: $white-color;
-  height: 100%;
-  border-top: 0px;
+  background-color: #dad325;
+  color: #000000;
+  height: 601px;
+  border-bottom: 2px solid black;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
@@ -21,6 +16,11 @@
   .about-wrapper {
     @include respond(phone) {
       padding-bottom: 5rem;
+    }
+
+    .cta-btn--resume {
+      color: #000000 !important;
+      border: 2px solid #000000 !important;
     }
 
     &__image {

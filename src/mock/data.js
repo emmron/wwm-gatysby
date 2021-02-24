@@ -16,6 +16,13 @@ export const heroData = {
 };
 
 // ABOUT DATA
+export const headerData = {
+  img: 'logo.svg',
+  paragraphOne: '',
+  paragraphTwo: '',
+  paragraphThree: '',
+  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+};
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne: '',
@@ -23,7 +30,6 @@ export const aboutData = {
   paragraphThree: '',
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
-
 // PROJECTS DATA
 export const projectsData = [
   {

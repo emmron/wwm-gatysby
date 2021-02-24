@@ -4,16 +4,26 @@
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  background: $white-color;
+  background: #006720;
   font-weight: 400;
   color: $dark-blue-text;
   padding: 0rem 5.6rem;
-  margin-bottom: 0;
+  margin-bottom: -64px;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: -1;
+  z-index: 99;
+
+  .container {
+    @include respond(phone) {
+      margin-top: -44px !important;
+    }
+  }
+
+  @include respond(phone) {
+    padding-top: 0 !important;
+  }
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
@@ -25,11 +35,65 @@
     padding: 0rem $default-font-size;
   }
 
+  .text-color-main {
+    height: auto;
+    position: relative;
+    text-transform: capitalize;
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: unset !important;
+    color: #ffd400 !important;
+    -webkit-text-fill-color: unset !important;
+
+    @include respond(phone) {
+      font-size: 31px;
+      letter-spacing: -1px;
+      padding-top: 6px;
+      padding-bottom: 18px;
+
+    }
+  }
+
+  .cta-btn {
+    background-image: unset !important;
+    background: #dad325;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 306px;
+    margin-top: 25px;
+    a {
+      color: #000000 !important;
+    }
+  }
+
+  .subtitle {
+    display: block;
+    position: relative;
+    font-style: italic;
+    padding-top: 6px;
+    letter-spacing: 3px;
+    text-transform: initial;
+    font-size: 47px;
+    font-weight: 900;
+
+    @include respond(phone) {
+      font-size: 32px !important;
+      font-weight: 900;
+      line-height: 38px !important;
+      letter-spacing: -1px !important;
+    }
+  }
+
   .hero-title {
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: 3.2rem;
-    text-align: left;
+    text-align: center;
+    color: #ffffff;
 
     @include respond(tab-land) {
       font-size: 4rem;
@@ -47,11 +111,31 @@
     }
   }
 
+  .main-title {
+    @include respond(phone) {
+      width: 100%;
+      font-size: 65px;
+      text-align: center;
+      letter-spacing: 1px;
+      display: block;
+      line-height: 64px;
+      margin-bottom: 17px;
+      position: relative;
+      top: -21px;
+    }
+  }
+
   .hero-cta {
     display: flex;
+    justify-content: center;
 
     @include respond(tab-port) {
       justify-content: center;
+    }
+
+
+    @include respond(phone) {
+      color: #000000 !important;
     }
 
     & a {
@@ -59,6 +143,8 @@
 
       @include respond(phone) {
         font-size: 2rem;
+        color: #000000 !important;
+
       }
     }
   }

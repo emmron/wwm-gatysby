@@ -1,0 +1,29 @@
+#Header {
+  padding: 0;
+  position: sticky;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 88px;
+  width: 100%;
+  background-color: #dad325;
+  z-index: 999;
+  padding-top: 32px;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+
+
+  img {
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    border-radius: 50%;
+    @include respond(phone) {
+      height: 107px;
+      position: absolute;
+      left: 16px;
+      top: -23px;
+    }
+  }
+}
