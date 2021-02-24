@@ -65,8 +65,18 @@
     text-align: center;
     width: 306px;
     margin-top: 25px;
+
+    @include respond(phone) {
+      border: 2px solid #000000 !important;
+      -webkit-text-fill-color: #ffffff !important;
+      color: #ffffff !important;
+      background: #000000 !important;
+    }
     a {
       color: #000000 !important;
+      @include respond(phone) {
+        color: #ffffff !important;
+      }
     }
   }
 
@@ -81,9 +91,9 @@
     font-weight: 900;
 
     @include respond(phone) {
-      font-size: 32px !important;
-      font-weight: 900;
-      line-height: 38px !important;
+      font-size: 38px !important;
+      font-weight: 700;
+      line-height: 40px !important;
       letter-spacing: -1px !important;
     }
   }
@@ -114,14 +124,14 @@
   .main-title {
     @include respond(phone) {
       width: 100%;
-      font-size: 65px;
+      font-size: 66px;
       text-align: center;
-      letter-spacing: 1px;
+      letter-spacing: -1px;
       display: block;
-      line-height: 64px;
+      line-height: 63px;
       margin-bottom: 17px;
       position: relative;
-      top: -21px;
+      top: -11px;
     }
   }
 
