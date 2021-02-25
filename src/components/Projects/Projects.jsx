@@ -26,7 +26,7 @@ const Projects = () => {
   return (
       <section id="projects">
         <Container>
-          <Title title="Why our builds are the best in Perth" />
+          <Title title="Our Websites Run Like Ferrari's, they're fast" />
           <Row className="about-wrapper">
             <Col md={12} sm={12}>
               <Fade bottom duration={1000} delay={600} distance="30px">
