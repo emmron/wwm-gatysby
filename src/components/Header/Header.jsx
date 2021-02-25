@@ -30,7 +30,7 @@ const Header = () => {
                 <Row className="Header-wrapper">
                     <Col md={6} sm={12}>
                         <Image
-                            src="logo.svg"
+                            src="logoamber.svg"
                             className="mx-auto shadow-xl"
                             alt="Sunset Image"
                             style={{

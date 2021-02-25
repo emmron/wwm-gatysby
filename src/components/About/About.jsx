@@ -32,7 +32,7 @@ const About = () => {
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
                 <Image
-                    src="logo.svg"
+                    src="logoamber.svg"
                     className="mx-auto shadow-xl"
                     alt="Sunset Image"
                     style={{
