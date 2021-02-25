@@ -28,7 +28,7 @@ const Projects = () => {
         <Container>
           <Title title="Our Websites Run Like Ferrari's, they're fast" />
           <Row className="about-wrapper">
-            <Col md={12} sm={12}>
+            <Col md={6} sm={12}>
               <Fade bottom duration={1000} delay={600} distance="30px">
                 <div className="about-wrapper__image">
                   <Image
@@ -46,7 +46,17 @@ const Projects = () => {
               </Fade>
             </Col>
             <Col md={6} sm={12}>
-
+                <Image
+                    src="fast.PNG"
+                    className="mx-auto shadow-xl"
+                    alt="Sunset Image"
+                    style={{
+                        border: 'none',
+                        height: '225px',
+                        position: 'relative',
+                        top: '24px'
+                    }}
+                />
             </Col>
           </Row>
         </Container>
