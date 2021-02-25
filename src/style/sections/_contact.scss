@@ -17,6 +17,11 @@
     -webkit-clip-path: none;
   }
 
+  @include respond(phone) {
+    padding-bottom: 16em;
+    padding-top: 6em;
+  }
+
   .contact-wrapper {
     margin-top: 3.2rem;
     padding: 0 2rem;
