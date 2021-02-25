@@ -1,12 +1,17 @@
 #projects {
-  background-color: #006720;
+  background-color: #000000;
   color: #ffffff;
+  height: 900px;
   margin-top: -15rem;
-  padding-top: 15rem;
+  padding-top: 18rem;
 
   @include respond(tab-land) {
     margin-top: 0;
     padding-top: 5rem;
+  }
+
+  img {
+    object-fit: contain !important;
   }
 
   .project-wrapper {
