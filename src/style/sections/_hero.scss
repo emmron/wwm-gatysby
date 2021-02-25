@@ -65,6 +65,11 @@
         position: relative;
         top:-12px;
       }
+
+      @include respond(phone) {
+        height: 181px;
+        margin-bottom: 28px;
+      }
     }
   }
 

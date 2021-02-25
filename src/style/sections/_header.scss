@@ -23,6 +23,9 @@
     border-radius: 50%;
     @include respond(phone) {
       height: 100px !important;
+      position: absolute !important;
+      left: 16px !important;
+      top: -24px !important;
     }
   }
 }
