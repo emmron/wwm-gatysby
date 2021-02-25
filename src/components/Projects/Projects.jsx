@@ -28,7 +28,7 @@ const Projects = () => {
         <Container>
           <Title title="Why our builds are the best in Perth" />
           <Row className="about-wrapper">
-            <Col md={4} sm={12}>
+            <Col md={12} sm={12}>
               <Fade bottom duration={1000} delay={600} distance="30px">
                 <div className="about-wrapper__image">
                   <Image
@@ -37,7 +37,9 @@ const Projects = () => {
                       alt="Sunset Image"
                       style={{
                         border: 'none',
-                        height: '300px',
+                        height: '225px',
+                        position: 'relative',
+                        top: '24px'
                       }}
                   />
                 </div>
