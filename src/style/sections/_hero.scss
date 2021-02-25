@@ -8,11 +8,11 @@
   font-weight: 400;
   color: $dark-blue-text;
   padding: 0rem 5.6rem;
-  margin-bottom: -64px;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  margin-bottom: 0;
   z-index: 99;
 
   .container {
@@ -55,9 +55,22 @@
     }
   }
 
+  .hero-imgcol {
+    img {
+      transition: all 0.25s ease-in-out;
+      cursor: pointer;
+      top: 0;
+      position: relative;
+      &:hover {
+        position: relative;
+        top:-12px;
+      }
+    }
+  }
+
   .cta-btn {
     background-image: unset !important;
-    background: #dad325;
+    background: #ffc008;
     height: 66px;
     display: flex;
     align-items: center;
@@ -81,7 +94,7 @@
   }
 
   .subtitle {
-    display: block;
+    display: none;
     position: relative;
     font-style: italic;
     padding-top: 6px;
