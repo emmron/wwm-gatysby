@@ -21,14 +21,13 @@ const Footer = () => {
           </Link>
         </span>
           <Row className="about-wrapper">
-              <Col md={6} sm={12}>
+              <Col className="footer-imgcol" md={6} sm={12}>
                   <Image
                       src="logoamber.svg"
                       className="mx-auto shadow-xl"
                       alt="Sunset Image"
                       style={{
                           border: 'none',
-                          height: '124px',
                       }}
                   />
               </Col>

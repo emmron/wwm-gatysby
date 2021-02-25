@@ -37,7 +37,7 @@ const Header = () => {
                                 border: 'none',
                                 height: '134px',
                                 position: 'absolute',
-                                left: '12px',
+                                left: '-12px',
                                 top: '-27px'
                             }}
                         />                    </Col>

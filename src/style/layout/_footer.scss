@@ -1,10 +1,21 @@
 .footer {
   background-color: #000000;
   color: $white-color;
-  padding: 4.8rem 0;
+  padding-bottom: 29px;
+  padding-top: 47px;
 
   @include respond(phone) {
     border: 0px;
+  }
+
+  .back-to-top {
+    position: absolute;
+    right: 0;
+    top: -11px;
+  }
+
+  .container {
+    position: relative;
   }
 
   .abn {
@@ -12,6 +23,19 @@
     font-size: 22px;
     letter-spacing: 1px;
     font-weight: 300;
+  }
+
+  .footer-imgcol {
+    position: relative;
+
+    img {
+      height: 154px;
+      display: inline-block;
+      float: left;
+      position: absolute;
+      top: -119px;
+      left: 0;
+    }
   }
 
   &__text {
