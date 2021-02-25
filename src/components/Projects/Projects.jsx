@@ -46,6 +46,8 @@ const Projects = () => {
               </Fade>
             </Col>
             <Col md={6} sm={12}>
+                <Fade bottom duration={1000} delay={600} distance="30px">
+
                 <Image
                     src="fast.PNG"
                     className="mx-auto shadow-xl"
@@ -57,6 +59,8 @@ const Projects = () => {
                         top: '24px'
                     }}
                 />
+                </Fade>
+
             </Col>
           </Row>
         </Container>
