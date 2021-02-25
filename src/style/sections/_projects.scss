@@ -10,6 +10,10 @@
     padding-top: 5rem;
   }
 
+  @include respond(phone) {
+    height: auto;
+  }
+
   img {
     object-fit: contain !important;
   }

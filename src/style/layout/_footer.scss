@@ -28,6 +28,12 @@
   .footer-imgcol {
     position: relative;
 
+    @include respond(phone) {
+      padding-bottom: 24px;
+      display: flex;
+      justify-content: center;
+    }
+
     img {
       height: 154px;
       display: inline-block;
@@ -35,6 +41,12 @@
       position: absolute;
       top: -119px;
       left: 0;
+
+      @include respond(phone) {
+        position: relative;
+        top: -112px;
+        left: 0;
+      }
     }
   }
 

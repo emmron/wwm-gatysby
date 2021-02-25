@@ -36,8 +36,7 @@ const About = () => {
                     className="mx-auto shadow-xl"
                     alt="Sunset Image"
                     style={{
-                      border: 'none',
-                      height: '300px',
+                      border: 'none'
                     }}
                 />
               </div>
