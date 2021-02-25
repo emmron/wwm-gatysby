@@ -21,7 +21,7 @@ const Footer = () => {
           </Link>
         </span>
           <Row className="about-wrapper">
-              <Col md={12} sm={12}>
+              <Col md={6} sm={12}>
                   <Image
                       src="logoamber.svg"
                       className="mx-auto shadow-xl"
@@ -31,6 +31,9 @@ const Footer = () => {
                           height: '124px',
                       }}
                   />
+              </Col>
+              <Col md={6} sm={12}>
+                    <span className="abn">ABN 63 108 986 731    </span>
               </Col>
           </Row>
       </Container>
